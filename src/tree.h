@@ -1,8 +1,8 @@
 /* ------------------------------------------------------------------------------------ */
-/*                                      structure.h                                     */
+/*                                      tree.h                                     */
 /*                                         entête                                       */
 /*                                                                                      */
-/*entête du fichier structure.c et déclaration des structures des listes utilisées      */
+/*entête du fichier tree.c et déclaration des structures des listes utilisées      */
 /*                                                                                      */
 /* ------------------------------------------------------------------------------------ */
 
@@ -14,19 +14,18 @@
 #include <string.h>
 
 
-typedef struct Tree
+typedef struct tree
 {
-    int             value;
+    int            value;
     struct tree *  left;
     struct tree *  right;
 
 }tree_t;
 
-typedef struct Binary
-{
-    tree_t  * t;
+tree_t * initialisation();
 
-}binary_t;
+void PrintTree(tree_t *);
 
+tree_t * CreateTree(char*);
 
 #endif
