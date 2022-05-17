@@ -21,13 +21,13 @@ tree_t * initialisation()
 
 tree_t * PrintTree(tree_t * tree)
 {
-  // printf("Val | left | right \n");
-  // tree_t * curr = tree;
-  // tree_t * prec = curr;
-  // while (curr->left == NULL && curr->right == NULL)
-  // {
-  //   printf("%d   |%d     |%d \n",curr->value, curr->left, curr->right);
-  // }
+  printf("Val | left | right \n");
+  tree_t * curr = tree;
+  tree_t * prec = curr;
+  while (curr->left == NULL && curr->right == NULL)
+  {
+    printf("%d   |%d     |%d \n",curr->value, curr->left->value, curr->right->value);
+  }
 }
 
 tree_t * CreateTree(char* FileName)

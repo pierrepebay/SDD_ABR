@@ -24,7 +24,7 @@ typedef struct tree
 
 tree_t * initialisation();
 
-void PrintTree(tree_t *);
+tree_t * PrintTree(tree_t *);
 
 tree_t * CreateTree(char*);
 
